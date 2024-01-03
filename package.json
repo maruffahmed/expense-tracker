@@ -1,0 +1,37 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "setup": "yarn && cd frontend && yarn && cd .. && cd backend && yarn",
+    "start": "concurrently --names \"Backend,Frontend\" -c \"bgBlue.bold,bgGreen.bold\" \"yarn run server:dev\" \"yarn run app:dev\"",
+    "prepare": "husky install",
+    "app:dev": "cd frontend && yarn dev",
+    "app:build": "cd frontend && yarn build",
+    "app:start": "cd frontend && yarn start",
+    "server:dev": "cd backend && yarn dev",
+    "server:start": "cd backend && yarn start",
+    "server:build": "cd backend && yarn build",
+    "server:prod": "cd backend && yarn start:prod",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maruffahmed/expense-tracker.git"
+  },
+  "author": "Md Maruf Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maruffahmed/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/maruffahmed/expense-tracker#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "pinst": "^3.0.0"
+  }
+}
