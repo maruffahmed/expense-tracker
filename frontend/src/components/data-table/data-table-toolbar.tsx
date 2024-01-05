@@ -6,7 +6,7 @@ import { Table } from "@tanstack/react-table";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-import { payment_methods } from "../dashboard/data";
+import { payment_methods, transaction_types } from "../dashboard/data";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
 import AddExpenseDialog from "../dashboard/add-expense-dialog";
 
@@ -35,6 +35,13 @@ export function DataTableToolbar<TData>({
             column={table.getColumn("payment_method")}
             title="Payment Method"
             options={payment_methods}
+          />
+        )}
+        {table.getColumn("type") && (
+          <DataTableFacetedFilter
+            column={table.getColumn("type")}
+            title="Transaction Type"
+            options={transaction_types}
           />
         )}
         {isFiltered && (

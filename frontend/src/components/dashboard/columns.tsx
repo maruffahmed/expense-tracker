@@ -3,6 +3,7 @@ import { Task } from "./schema";
 import { DataTableColumnHeader } from "../data-table/data-table-column-header";
 import { DataTableRowActions } from "../data-table/data-table-row-actions";
 import dayjs from "dayjs";
+import { Badge } from "../ui/badge";
 
 export const columns: ColumnDef<Task>[] = [
   {
@@ -76,6 +77,26 @@ export const columns: ColumnDef<Task>[] = [
         {(row.getValue("payment_method") as string).replace("_", " ")}
       </div>
     ),
+    filterFn: (row, id, value) => {
+      return value.includes(row.getValue(id));
+    },
+    enableSorting: false,
+  },
+  {
+    accessorKey: "type",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Type" />
+    ),
+    cell: ({ row }) => {
+      const type = row.getValue("type");
+      return (
+        <div className="w-[100px] capitalize">
+          <Badge variant={type == "expense" ? "destructive" : "success"}>
+            {(row.getValue("type") as string).replace("_", " ")}
+          </Badge>
+        </div>
+      );
+    },
     filterFn: (row, id, value) => {
       return value.includes(row.getValue(id));
     },

@@ -1,7 +1,7 @@
 import Stats from "@/components/dashboard/stats";
 import { DataTable } from "@/components/data-table/data-table";
 import Layout from "@/components/layout";
-import tasks from "../data/tempdata.json";
+import transactions from "../data/transactions.json";
 import { columns } from "@/components/dashboard/columns";
 
 export default function Dashboard() {
@@ -20,7 +20,7 @@ export default function Dashboard() {
               </h2>
               <div className="overflow-hidden rounded-lg bg-white shadow min-h-[50vh]">
                 <div className="p-6">
-                  <DataTable data={tasks} columns={columns} />
+                  <DataTable data={transactions} columns={columns} />
                 </div>
               </div>
             </section>

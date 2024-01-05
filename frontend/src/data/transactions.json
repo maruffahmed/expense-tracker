@@ -1,0 +1,902 @@
+[
+  {
+    "id": "18153b12-0958-46a0-a34d-183d69aeaa45",
+    "date": "2024-01-05T06:29:06.190Z",
+    "amount": 1888,
+    "category": "work",
+    "description": "Desidero spiritus cicuta arma degenero ocer concedo nihil.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "916493da-1646-4632-b211-382092770d93",
+    "date": "2024-01-05T11:31:12.995Z",
+    "amount": 8118,
+    "category": "shopping",
+    "description": "Cognomen careo blanditiis virga adstringo.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "783745de-5b1c-4484-be1f-3f8cf1cc5ca6",
+    "date": "2024-01-04T20:43:59.057Z",
+    "amount": 1925,
+    "category": "shopping",
+    "description": "Sui armarium artificiose curiositas subito arto decretum a derelinquo pauper.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "a890c035-eb7d-4e97-b73f-6be24e0bb750",
+    "date": "2024-01-04T21:53:01.739Z",
+    "amount": 5653,
+    "category": "shopping",
+    "description": "Vito neque sulum sunt talis.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "6f878e18-a66e-4766-844d-0cacfb18be16",
+    "date": "2024-01-04T22:13:56.266Z",
+    "amount": 2082,
+    "category": "personal",
+    "description": "Spoliatio cras defendo administratio careo perferendis qui charisma texo.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "6f90d88e-219f-462d-9277-a4a73ac1651c",
+    "date": "2024-01-04T23:11:18.880Z",
+    "amount": 6098,
+    "category": "personal",
+    "description": "Ventosus cogo desparatus earum alienus suspendo.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "58bd6a37-ae6f-4274-b187-d79be836f2cf",
+    "date": "2024-01-05T11:15:52.430Z",
+    "amount": 7958,
+    "category": "personal",
+    "description": "Acquiro vulpes accusantium angustus volup.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "a84b2fa7-a849-4092-8f41-628b9f072fe8",
+    "date": "2024-01-05T09:50:52.227Z",
+    "amount": 1049,
+    "category": "shopping",
+    "description": "Tantillus stips votum comitatus color labore alii.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "7bcaef58-5c23-41a3-9bab-5e49638dfc9b",
+    "date": "2024-01-05T00:29:12.749Z",
+    "amount": 4102,
+    "category": "work",
+    "description": "Illo super absum allatus verecundia paulatim optio stultus appello.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "bccc38b7-f760-4802-8f0d-41d6852ccee4",
+    "date": "2024-01-05T08:38:29.449Z",
+    "amount": 997,
+    "category": "personal",
+    "description": "Absorbeo cornu apparatus degenero assentator tremo uter alii tabesco cito.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "2f49ac44-ffae-4121-819d-fa76709ff5f1",
+    "date": "2024-01-05T07:33:26.899Z",
+    "amount": 2716,
+    "category": "work",
+    "description": "Umerus virga soluta cariosus.",
+    "type": "expense",
+    "payment_method": "other"
+  },
+  {
+    "id": "087fb5c6-e2de-402e-9af0-7bbf400cb37f",
+    "date": "2024-01-04T21:45:09.259Z",
+    "amount": 9530,
+    "category": "others",
+    "description": "Adeo ulciscor terminatio suppellex tepidus cerno ullam utique succedo accusantium.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "5f2246a1-6922-43ee-a123-85ee81396138",
+    "date": "2024-01-05T18:12:36.689Z",
+    "amount": 2613,
+    "category": "personal",
+    "description": "Assumenda tristis soleo.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "2fc222f2-ff7a-44d1-ac9f-cf33a179a48a",
+    "date": "2024-01-05T06:46:26.078Z",
+    "amount": 1994,
+    "category": "work",
+    "description": "Qui atavus bellum carpo provident accusantium voluptatem aufero theatrum admoveo.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "7dc817a8-0278-4b61-beb1-0c6efcfc2079",
+    "date": "2024-01-05T13:52:30.043Z",
+    "amount": 3836,
+    "category": "others",
+    "description": "Varietas tripudio ut.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "11416941-fd52-442c-8afb-dec003e2da17",
+    "date": "2024-01-05T15:32:26.321Z",
+    "amount": 1106,
+    "category": "work",
+    "description": "Repudiandae ultio voluptatum spargo bellum vir confido desolo.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "45b151e1-bd73-4191-ae3d-33fb692e5288",
+    "date": "2024-01-05T02:45:28.216Z",
+    "amount": 4407,
+    "category": "personal",
+    "description": "Cito tempus somnus deinde taedium debitis carmen tot.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "cad314ee-0cf7-4685-b689-87ca8dd4a7fd",
+    "date": "2024-01-05T03:39:40.589Z",
+    "amount": 5601,
+    "category": "work",
+    "description": "Compono tenus omnis tersus deleniti utor armarium abutor stultus truculenter.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "f8340b1a-2cb7-4e80-8343-3f21c155c651",
+    "date": "2024-01-05T10:02:22.385Z",
+    "amount": 4530,
+    "category": "others",
+    "description": "Somniculosus tracto abundans cultura subiungo sursum.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "10909b7d-f401-41f1-80ce-02a1311d8116",
+    "date": "2024-01-05T10:44:02.618Z",
+    "amount": 6726,
+    "category": "shopping",
+    "description": "Suffragium terebro carpo utroque quos tepidus.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "2dfe9309-6276-430c-86ab-586ceee2e8d0",
+    "date": "2024-01-05T12:10:51.918Z",
+    "amount": 4811,
+    "category": "others",
+    "description": "Cupiditate comes solutio vereor thymbra nam.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "e1ea4a95-6b23-403d-aeb9-182a593c1b6d",
+    "date": "2024-01-05T13:16:22.052Z",
+    "amount": 1413,
+    "category": "work",
+    "description": "Comminor vetus utrimque.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "931a2f95-1a3e-4096-b605-9c8d58d96cf5",
+    "date": "2024-01-05T16:53:49.372Z",
+    "amount": 6049,
+    "category": "shopping",
+    "description": "Cupiditas est caelum.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "79a7d880-0744-427b-93d3-c60b6d8aa876",
+    "date": "2024-01-05T06:14:00.453Z",
+    "amount": 4028,
+    "category": "work",
+    "description": "Vivo aureus ubi vitiosus adulescens.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "db64be66-7834-4778-ba63-b8c973e55993",
+    "date": "2024-01-05T01:58:38.070Z",
+    "amount": 8311,
+    "category": "shopping",
+    "description": "Triumphus defetiscor theca tendo attonbitus videlicet taceo caries degenero ut.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "ddf4a3f5-8889-4d93-8739-12f9479a755b",
+    "date": "2024-01-05T14:39:53.311Z",
+    "amount": 9121,
+    "category": "work",
+    "description": "Maiores alter virtus cohaero compono agnitio acer.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "e9434b07-f250-4560-be72-e15ff4f4ebc9",
+    "date": "2024-01-05T17:41:16.908Z",
+    "amount": 2281,
+    "category": "personal",
+    "description": "Ascisco tutis acidus curvo.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "cd076b4d-00e0-4b36-a67c-d5dc6cb197a0",
+    "date": "2024-01-04T22:35:18.120Z",
+    "amount": 6043,
+    "category": "personal",
+    "description": "Ulterius defessus coepi quae acer viscus tandem cupiditate conqueror reiciendis.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "7cdfc4cf-13fe-4214-b261-ca6bbf05bace",
+    "date": "2024-01-04T21:42:18.129Z",
+    "amount": 825,
+    "category": "personal",
+    "description": "Patior at denuncio tenax.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "23a982a4-433d-45dd-91b4-3544defab216",
+    "date": "2024-01-04T23:56:15.743Z",
+    "amount": 8601,
+    "category": "personal",
+    "description": "Occaecati altus taceo capitulus clamo strues appositus deprecator sto.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "e8c56767-8cff-4b6e-963c-7841114a11e3",
+    "date": "2024-01-05T18:15:58.649Z",
+    "amount": 3672,
+    "category": "personal",
+    "description": "Causa alius desidero comitatus vae.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "c4817688-51da-4a0c-9bcf-daf814647fe6",
+    "date": "2024-01-04T19:06:20.720Z",
+    "amount": 2914,
+    "category": "work",
+    "description": "Vestigium decimus astrum stabilis hic tempus amita advoco corrumpo.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "05fad61b-7f65-490c-9613-5bc2dc6fe691",
+    "date": "2024-01-04T19:33:10.093Z",
+    "amount": 8589,
+    "category": "work",
+    "description": "Umquam cedo vos taceo campana recusandae crustulum.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "479229f1-0943-4baa-95cb-7ce9312fed71",
+    "date": "2024-01-05T07:32:29.543Z",
+    "amount": 8253,
+    "category": "shopping",
+    "description": "Peccatus torqueo depereo sed tenus blanditiis desparatus voluptas vae iure.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "5c113c00-3533-4b90-8c83-47cbf3755898",
+    "date": "2024-01-05T11:52:46.329Z",
+    "amount": 2037,
+    "category": "work",
+    "description": "Aspernatur accendo thalassinus stips adfero quo.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "0f859857-2788-4d3f-95cf-7112300a382c",
+    "date": "2024-01-04T20:26:50.994Z",
+    "amount": 6060,
+    "category": "shopping",
+    "description": "Abbas cursus decretum explicabo cogo sperno.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "6fc9b0ae-a63b-4b70-9b60-bf17d7b1cf83",
+    "date": "2024-01-05T01:05:40.891Z",
+    "amount": 6499,
+    "category": "personal",
+    "description": "Thesaurus quis asporto clementia depono calculus torrens adversus.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "8295b0ea-2e1f-4bb3-af53-82325b2e3fd4",
+    "date": "2024-01-05T14:16:23.642Z",
+    "amount": 3352,
+    "category": "shopping",
+    "description": "Vergo error pauci voluptatum alioqui taedium veniam alveus id vesica.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "e688f3f9-174c-41b1-bb36-7085530cd23f",
+    "date": "2024-01-05T00:06:59.683Z",
+    "amount": 9576,
+    "category": "others",
+    "description": "Sapiente abundans deludo timidus vester.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "60591444-2af6-4b0f-8122-2c804fa84e76",
+    "date": "2024-01-05T08:22:38.211Z",
+    "amount": 678,
+    "category": "others",
+    "description": "Capillus centum speciosus tero inflammatio creo vito volutabrum.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "11215848-0e18-4462-83a9-8ada2b9c89c7",
+    "date": "2024-01-05T12:34:47.962Z",
+    "amount": 4607,
+    "category": "others",
+    "description": "Vito aegre ut.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "a3ed22ec-3229-4009-9458-d5919f40586f",
+    "date": "2024-01-05T08:58:15.181Z",
+    "amount": 6229,
+    "category": "personal",
+    "description": "Turba amicitia amita terreo acervus suscipit strenuus vomito arbustum clementia.",
+    "type": "expense",
+    "payment_method": "other"
+  },
+  {
+    "id": "23eaf44f-5c94-4571-94de-0bbfa02fce6e",
+    "date": "2024-01-04T22:50:05.917Z",
+    "amount": 4902,
+    "category": "work",
+    "description": "Acer tabgo adstringo.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "e650164c-a3f1-4791-863e-59a3a4ebce21",
+    "date": "2024-01-05T08:42:27.961Z",
+    "amount": 4779,
+    "category": "personal",
+    "description": "Dignissimos decimus quidem vindico.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "5a48cdbf-ea4f-4763-8fb5-5d2ba593f73d",
+    "date": "2024-01-04T19:09:09.764Z",
+    "amount": 3163,
+    "category": "shopping",
+    "description": "Tamen caste cognomen caste infit tumultus vetus tempus adfero ambitus.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "d472f374-2674-4a5f-b896-c0ad11dae9b6",
+    "date": "2024-01-05T11:09:54.087Z",
+    "amount": 2801,
+    "category": "others",
+    "description": "Paens cumque cognomen.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "44b473e8-7ed7-469c-9a57-97347b4c8df0",
+    "date": "2024-01-04T19:03:34.399Z",
+    "amount": 870,
+    "category": "work",
+    "description": "Culpo surculus numquam.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "e10a3299-5022-4daf-8576-4e9e00d291ac",
+    "date": "2024-01-05T01:27:04.729Z",
+    "amount": 2631,
+    "category": "work",
+    "description": "Concedo depono adopto tabesco versus.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "0e0632d8-bdb8-40f3-a155-6f646f82b5b0",
+    "date": "2024-01-05T00:07:15.726Z",
+    "amount": 1072,
+    "category": "shopping",
+    "description": "Abbas officiis accendo degusto sopor tabernus spoliatio.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "3bcc9671-a2db-408b-813f-4052239e9ab8",
+    "date": "2024-01-05T09:57:08.057Z",
+    "amount": 7568,
+    "category": "work",
+    "description": "Centum ullam curriculum venustas adficio tergiversatio strues verus eaque.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "afd050db-979b-4bf1-a9eb-07fd99e8cf5f",
+    "date": "2024-01-05T04:44:56.748Z",
+    "amount": 7909,
+    "category": "others",
+    "description": "Summopere repellendus atrox infit fugiat acerbitas vindico aut amissio amiculum.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "3b42280e-a8a5-4385-ae1d-e1201918544d",
+    "date": "2024-01-04T22:16:37.175Z",
+    "amount": 8196,
+    "category": "personal",
+    "description": "Cumque cursus usque laborum utilis thesaurus.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "4b3d2ce4-223d-4614-a528-6a9cac01f112",
+    "date": "2024-01-05T08:54:03.585Z",
+    "amount": 6534,
+    "category": "others",
+    "description": "Summisse caveo coadunatio.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "8ac53281-43bb-409a-86c9-79ffcb752bb6",
+    "date": "2024-01-05T10:04:12.312Z",
+    "amount": 7327,
+    "category": "personal",
+    "description": "Eaque sumptus apto.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "e01450db-cf7e-439d-b761-2e47d10c2deb",
+    "date": "2024-01-05T01:42:26.709Z",
+    "amount": 6929,
+    "category": "others",
+    "description": "Tandem volva taedium tot astrum agnitio theologus amplitudo contego sonitus.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "3c50e62a-cbaf-467c-adc9-0ab07cd60909",
+    "date": "2024-01-05T08:04:35.290Z",
+    "amount": 9926,
+    "category": "personal",
+    "description": "Templum ustilo solutio taedium versus optio templum.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "e9a7bc0a-32e2-43e1-a239-a3f22abe8b3a",
+    "date": "2024-01-05T09:03:25.840Z",
+    "amount": 8387,
+    "category": "personal",
+    "description": "Acsi reprehenderit suscipit speciosus caput.",
+    "type": "expense",
+    "payment_method": "other"
+  },
+  {
+    "id": "509edced-2a1e-4c15-a10c-367b56f22a89",
+    "date": "2024-01-05T11:45:42.287Z",
+    "amount": 3899,
+    "category": "others",
+    "description": "Sum caelestis a provident.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "76c828a4-b806-49d3-a0a6-a68a63621fc7",
+    "date": "2024-01-04T21:16:07.853Z",
+    "amount": 2982,
+    "category": "others",
+    "description": "Arcus alveus turbo tabula virgo concido illum ancilla angustus.",
+    "type": "expense",
+    "payment_method": "other"
+  },
+  {
+    "id": "ce6e4163-d50b-414e-9755-3b9025a9c335",
+    "date": "2024-01-04T22:14:01.593Z",
+    "amount": 6583,
+    "category": "shopping",
+    "description": "Natus tabula optio trucido tutamen turba accusantium.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "bd8f50b1-5c28-4de7-bc58-2ea6c043e84c",
+    "date": "2024-01-05T02:11:11.918Z",
+    "amount": 1732,
+    "category": "shopping",
+    "description": "Suscipio repellendus aranea acidus consectetur uredo.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "47beb722-a2a8-4973-8372-5818542a1127",
+    "date": "2024-01-05T00:17:00.661Z",
+    "amount": 3659,
+    "category": "personal",
+    "description": "Conatus aer tantum verus voco.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "30eabcfe-8425-4dcc-9758-5f74d2a8b0be",
+    "date": "2024-01-05T16:11:59.031Z",
+    "amount": 770,
+    "category": "work",
+    "description": "Curo tendo voro conduco textilis exercitationem curto velociter.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "a873232b-68d1-4ee7-8ac0-a0508732d3fb",
+    "date": "2024-01-05T00:11:19.731Z",
+    "amount": 8447,
+    "category": "shopping",
+    "description": "Aurum aliquam adsidue aegrotatio delego deripio.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "6a6e2ccb-a370-4a84-a1e4-42e4cb4d6b42",
+    "date": "2024-01-05T00:42:29.605Z",
+    "amount": 61,
+    "category": "personal",
+    "description": "Defero delibero iusto ante aggredior adsum delinquo strenuus.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "60891ff1-6d86-47cb-8bdd-81d9e39b5cfb",
+    "date": "2024-01-05T14:15:08.883Z",
+    "amount": 6656,
+    "category": "shopping",
+    "description": "Distinctio crebro tego versus.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "ff48e106-0f00-4376-bc0f-4a7424f7e273",
+    "date": "2024-01-05T01:35:44.093Z",
+    "amount": 484,
+    "category": "personal",
+    "description": "Culpo carcer abbas valetudo agnitio sono spoliatio varietas caries.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "c5551ae0-81cd-4a7e-92b2-4fc3abbd353a",
+    "date": "2024-01-05T09:17:26.386Z",
+    "amount": 4806,
+    "category": "personal",
+    "description": "Aegre tego accedo speculum cribro ciminatio tonsor comminor.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "12301f79-80ee-4cab-aa63-37a2090c8edc",
+    "date": "2024-01-05T07:11:48.472Z",
+    "amount": 7192,
+    "category": "personal",
+    "description": "Carcer cunabula aestivus ademptio ullam.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "c0ecc75f-aba1-46cd-80ab-7517d110a217",
+    "date": "2024-01-05T07:19:59.788Z",
+    "amount": 9531,
+    "category": "shopping",
+    "description": "Velut blandior adfectus voluptas.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "5199115f-d14e-4b1c-8089-84bcd49e9152",
+    "date": "2024-01-05T17:20:50.517Z",
+    "amount": 8401,
+    "category": "personal",
+    "description": "Victus blandior color vester molestiae angulus optio.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "6065ba7c-7ffc-4b8f-9c10-fd1f75a8034d",
+    "date": "2024-01-04T20:50:42.294Z",
+    "amount": 9493,
+    "category": "personal",
+    "description": "Viduo conor doloremque ars alioqui quasi adfectus labore.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "7f68de2e-b73f-4e22-9812-3afc8bad8540",
+    "date": "2024-01-05T09:20:49.674Z",
+    "amount": 4087,
+    "category": "work",
+    "description": "Stips audeo velum molestias.",
+    "type": "expense",
+    "payment_method": "other"
+  },
+  {
+    "id": "d332f7fa-eaa1-4e02-80df-644a076bc498",
+    "date": "2024-01-04T21:07:02.448Z",
+    "amount": 5921,
+    "category": "personal",
+    "description": "Depono talus temptatio.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "b9ac72be-38cd-4794-a97a-e2c12713feb1",
+    "date": "2024-01-05T12:08:59.702Z",
+    "amount": 5492,
+    "category": "others",
+    "description": "Demo brevis facere arguo adfectus coepi amoveo.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "fae0e7c9-ac8e-4d36-9316-531d24a780b9",
+    "date": "2024-01-05T00:51:58.889Z",
+    "amount": 6907,
+    "category": "shopping",
+    "description": "Decor denuncio celebrer nemo custodia audentia ea caritas vilicus.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "6e15b0d6-52a9-40f5-afd4-ddb5e77f593b",
+    "date": "2024-01-05T09:57:04.585Z",
+    "amount": 6635,
+    "category": "personal",
+    "description": "Solio clibanus conatus averto quibusdam defendo fugiat.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "03a81dda-5e38-45d8-9913-d4cbe751bbf4",
+    "date": "2024-01-05T06:30:28.721Z",
+    "amount": 6963,
+    "category": "others",
+    "description": "Voluptas tego delego arca supellex coadunatio aspicio excepturi tredecim.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "379774b2-3ec3-4497-8ffb-4ffb77f0cee1",
+    "date": "2024-01-05T03:28:06.162Z",
+    "amount": 2830,
+    "category": "shopping",
+    "description": "Cinis doloribus acies absum talis in cubitum coniuratio clementia caterva.",
+    "type": "income",
+    "payment_method": "other"
+  },
+  {
+    "id": "76d8120f-59dd-4d35-8a04-0db4ceaaff8d",
+    "date": "2024-01-05T09:30:58.417Z",
+    "amount": 781,
+    "category": "personal",
+    "description": "Ea conqueror cenaculum denique vesper adulescens valeo tubineus.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "c6401434-c1ad-4dbd-b497-1c8a95974c9b",
+    "date": "2024-01-05T15:34:16.177Z",
+    "amount": 740,
+    "category": "others",
+    "description": "Assumenda vere tricesimus tredecim ascisco carpo claudeo.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "f1654c2a-10f1-45f5-9e11-86a82ade0c3b",
+    "date": "2024-01-05T02:54:05.987Z",
+    "amount": 373,
+    "category": "work",
+    "description": "Ciminatio inflammatio sequi maxime arca aedificium collum tergiversatio.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "fab8a99a-3b2f-4e92-a097-9e204aafeb0d",
+    "date": "2024-01-05T04:58:16.231Z",
+    "amount": 2886,
+    "category": "others",
+    "description": "Cerno tristis saepe suadeo armarium victoria vaco suggero vulariter aggero.",
+    "type": "expense",
+    "payment_method": "other"
+  },
+  {
+    "id": "1203d412-233e-49f5-b92c-a48e4aebf6c5",
+    "date": "2024-01-05T07:56:44.135Z",
+    "amount": 7090,
+    "category": "others",
+    "description": "Vociferor tristis velut cur caries comparo.",
+    "type": "income",
+    "payment_method": "cash"
+  },
+  {
+    "id": "d612abcc-9307-4602-8a86-01d7ea5afb71",
+    "date": "2024-01-05T07:46:04.635Z",
+    "amount": 9690,
+    "category": "shopping",
+    "description": "Delinquo vergo balbus tendo cedo.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "ecbeb672-aa30-4eeb-88b6-8adcd96e2bdf",
+    "date": "2024-01-05T00:18:01.085Z",
+    "amount": 5060,
+    "category": "personal",
+    "description": "Sperno usque cibo advoco tolero accendo viduo.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "abfe954d-80b8-42d8-b7ec-54e7bf8b626b",
+    "date": "2024-01-05T04:44:50.520Z",
+    "amount": 5755,
+    "category": "work",
+    "description": "Approbo triduana trans vitae quos totidem.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "68f16b3c-4bd3-4f62-985f-795874522a40",
+    "date": "2024-01-05T15:42:05.348Z",
+    "amount": 2055,
+    "category": "work",
+    "description": "Solutio aro barba delectatio cohaero non bibo crudelis tempora ullam.",
+    "type": "expense",
+    "payment_method": "other"
+  },
+  {
+    "id": "1b2f4027-54e2-4656-84f9-9da12e1125c8",
+    "date": "2024-01-05T08:06:45.720Z",
+    "amount": 713,
+    "category": "personal",
+    "description": "Sublime maiores abstergo sordeo solio ventosus.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "ae4d4f03-cc67-4230-974d-93fba390a5d9",
+    "date": "2024-01-05T08:13:26.196Z",
+    "amount": 5975,
+    "category": "personal",
+    "description": "Talis sperno comprehendo trans voluptas suppellex carmen alius.",
+    "type": "income",
+    "payment_method": "card"
+  },
+  {
+    "id": "4c75350c-8112-4798-9244-339a13abfa07",
+    "date": "2024-01-05T09:28:12.689Z",
+    "amount": 372,
+    "category": "work",
+    "description": "Villa absorbeo articulus cubicularis ipsam deficio una.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "fdb93efd-a991-47f3-9661-db684104ac55",
+    "date": "2024-01-05T02:15:20.757Z",
+    "amount": 3732,
+    "category": "others",
+    "description": "Spectaculum avaritia audeo error abbas victus totidem clibanus.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "a311d18c-d9ef-467a-977c-ac9b656bb5c0",
+    "date": "2024-01-05T06:36:44.418Z",
+    "amount": 6670,
+    "category": "personal",
+    "description": "Talio sophismata infit.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "389e2442-deff-4a2f-9875-a9d0388b00b3",
+    "date": "2024-01-05T11:19:37.141Z",
+    "amount": 3001,
+    "category": "personal",
+    "description": "Vomica dedecor neque aperio credo ambulo usus autem aequus.",
+    "type": "income",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "631b1fc4-56c2-4dc0-9e15-0188b12dce41",
+    "date": "2024-01-04T19:10:35.728Z",
+    "amount": 6025,
+    "category": "personal",
+    "description": "Vulgo cavus acerbitas arca coma calcar derelinquo.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "3ba45aad-28b2-4645-bc75-37db1239438e",
+    "date": "2024-01-04T21:53:46.261Z",
+    "amount": 4912,
+    "category": "work",
+    "description": "Quibusdam contra accommodo statua terror.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "ebb98eef-736d-49f7-bda3-cd4eef8beaf5",
+    "date": "2024-01-05T13:19:01.483Z",
+    "amount": 6740,
+    "category": "personal",
+    "description": "Torqueo aperiam atque tabernus absconditus.",
+    "type": "expense",
+    "payment_method": "cash"
+  },
+  {
+    "id": "c7abf94d-cab9-4763-8603-7355e966a60f",
+    "date": "2024-01-05T08:24:19.688Z",
+    "amount": 6660,
+    "category": "personal",
+    "description": "Possimus attollo adnuo angelus adeo tabella spoliatio crudelis tripudio.",
+    "type": "expense",
+    "payment_method": "bank_transfer"
+  },
+  {
+    "id": "b7473f04-18a5-4f0d-ba56-37604b75a924",
+    "date": "2024-01-05T09:50:04.372Z",
+    "amount": 2117,
+    "category": "shopping",
+    "description": "Suscipio adiuvo deleo curiositas.",
+    "type": "expense",
+    "payment_method": "card"
+  },
+  {
+    "id": "fb924b96-79c5-4aa3-af8d-2c859cb6c36d",
+    "date": "2024-01-05T11:08:24.755Z",
+    "amount": 8013,
+    "category": "shopping",
+    "description": "Venia absum copiose dolore attollo.",
+    "type": "expense",
+    "payment_method": "card"
+  }
+]

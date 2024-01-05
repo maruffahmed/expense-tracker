@@ -32,18 +32,19 @@ const categories = [
   { label: "Others", value: "others" },
 ];
 
-const seedData = Array.from({ length: 100 }, () => ({
+const transactions = Array.from({ length: 100 }, () => ({
   id: faker.string.uuid(),
   date: faker.date.recent(),
   amount: faker.number.int({ min: 50, max: 10000 }),
   category: faker.helpers.arrayElement(categories).value,
   description: faker.lorem.sentence(),
+  type: faker.helpers.arrayElement(["income", "expense"]),
   payment_method: faker.helpers.arrayElement(payment_methods).value,
 }));
 
 fs.writeFileSync(
-  path.join(__dirname, "tempdata.json"),
-  JSON.stringify(seedData, null, 2)
+  path.join(__dirname, "transactions.json"),
+  JSON.stringify(transactions, null, 2)
 );
 
-console.log("✅ Tempdata data generated.");
+console.log("✅ Transactions data generated.");
