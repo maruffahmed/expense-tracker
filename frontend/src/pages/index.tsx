@@ -11,7 +11,7 @@ export default function Dashboard() {
         <main className="-mt-24 pb-8">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <Stats />
-            <h1 className="sr-only">Page title</h1>
+            <h1 className="sr-only">Dashboard</h1>
             {/* Main 3 column grid */}
 
             <section aria-labelledby="transaction-list">

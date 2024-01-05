@@ -5,10 +5,10 @@ import { Table } from "@tanstack/react-table";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { DataTableViewOptions } from "@/components/data-table/data-table-view-options";
 
 import { payment_methods } from "../dashboard/data";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
+import AddExpenseDialog from "../dashboard/add-expense-dialog";
 
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
@@ -23,7 +23,7 @@ export function DataTableToolbar<TData>({
     <div className="flex items-center justify-between">
       <div className="flex flex-1 items-center space-x-2">
         <Input
-          placeholder="Filter tasks..."
+          placeholder="Filter expense..."
           value={(table.getColumn("title")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
             table.getColumn("title")?.setFilterValue(event.target.value)
@@ -48,7 +48,7 @@ export function DataTableToolbar<TData>({
           </Button>
         )}
       </div>
-      <DataTableViewOptions table={table} />
+      <AddExpenseDialog />
     </div>
   );
 }
