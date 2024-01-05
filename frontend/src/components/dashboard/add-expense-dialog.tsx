@@ -37,7 +37,7 @@ export default function AddExpenseDialog({ ...props }: DialogProps) {
   return (
     <Dialog {...props}>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="h-8">
+        <Button variant="default" size="sm" className="h-8">
           Add expense
         </Button>
       </DialogTrigger>
