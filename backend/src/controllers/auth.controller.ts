@@ -4,13 +4,15 @@ import { authService, userService, tokenService, emailService } from '../service
 import exclude from '../utils/exclude';
 import { User } from '@prisma/client';
 import ApiError from '../utils/ApiError';
+import balanceService from '../services/balance.service';
 
 const register = catchAsync(async (req, res) => {
   const { email, password, name } = req.body;
   const user = await userService.createUser(email, password, name);
   const userWithoutPassword = exclude(user, ['password', 'createdAt', 'updatedAt']);
   const tokens = await tokenService.generateAuthTokens(user);
-  res.status(httpStatus.CREATED).send({ user: userWithoutPassword, tokens });
+  const balanceAccount = await balanceService.createBalanceAccount(user.id.toString());
+  res.status(httpStatus.CREATED).send({ user: userWithoutPassword, tokens, balanceAccount });
 });
 
 const login = catchAsync(async (req, res) => {

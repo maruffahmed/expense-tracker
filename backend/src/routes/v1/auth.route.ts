@@ -81,6 +81,8 @@ export default router;
  *                   $ref: '#/components/schemas/User'
  *                 tokens:
  *                   $ref: '#/components/schemas/AuthTokens'
+ *                 balanceAccount:
+ *                   $ref: '#/components/schemas/Balance'
  *       "400":
  *         $ref: '#/components/responses/DuplicateEmail'
  */
