@@ -44,6 +44,11 @@ const getTransactionByUserId = async (userId: string) => {
       },
       select: {
         transacrions: true
+      },
+      orderBy: {
+        transacrions: {
+          _count: 'desc'
+        }
       }
     });
     return transaction;
@@ -89,9 +94,51 @@ const createTransaction = async (userId: string, transaction: any) => {
   }
 };
 
+const deleteTransaction = async (userId: string, transactionId: string) => {
+  try {
+    let transaction;
+    await prisma.$transaction(async (tx) => {
+      // get balance account
+      const balanceAccount = await tx.balanceAccount.findFirstOrThrow({
+        where: {
+          userId: parseInt(userId)
+        }
+      });
+      // get transaction
+      transaction = await tx.transaction.findFirstOrThrow({
+        where: {
+          id: parseInt(transactionId)
+        }
+      });
+      // delete transaction
+      await tx.transaction.delete({
+        where: {
+          id: parseInt(transactionId)
+        }
+      });
+      // update balance account
+      await tx.balanceAccount.update({
+        where: {
+          id: balanceAccount?.id
+        },
+        data: {
+          balance:
+            transaction.type === 'INCOME'
+              ? balanceAccount?.balance - transaction.amount
+              : balanceAccount?.balance + transaction.amount
+        }
+      });
+    });
+    return transaction;
+  } catch (error) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Unable to delete transaction');
+  }
+};
+
 export default {
   getTotalIncomeByUserId,
   getTotalExpenseByUserId,
   getTransactionByUserId,
-  createTransaction
+  createTransaction,
+  deleteTransaction
 };

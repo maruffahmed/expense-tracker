@@ -51,3 +51,30 @@ export const useCreateTransaction = () => {
     },
   });
 };
+
+export const useDeleteTransaction = () => {
+  const queryClient = useQueryClient();
+  const { token } = useAuth();
+
+  return useMutation({
+    mutationFn: async (transactionId: string) => {
+      const balance = await axios.delete(
+        `${config.SERVER_URL}/v1/transaction/${transactionId}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      return balance.data as Transaction;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["transactions"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["balance"],
+      });
+    },
+  });
+};

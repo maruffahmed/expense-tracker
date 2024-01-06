@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { transactionsSchema } from "../dashboard/schema";
+import { useDeleteTransaction } from "@/lib/transaction.lib";
 
 interface DataTableRowActionsProps<TData> {
   row: Row<TData>;
@@ -21,7 +22,13 @@ export function DataTableRowActions<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
   const rowData = transactionsSchema.parse(row.original);
-  console.log(rowData);
+  const { mutateAsync } = useDeleteTransaction();
+
+  const handleDelete = async () => {
+    if (window.confirm("Are you sure you want to delete this transaction?")) {
+      await mutateAsync(rowData.id.toString());
+    }
+  };
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -36,7 +43,7 @@ export function DataTableRowActions<TData>({
       <DropdownMenuContent align="end" className="w-[160px]">
         <DropdownMenuItem>Edit</DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
+        <DropdownMenuItem onClick={handleDelete}>
           Delete
           <DropdownMenuShortcut>⌘⌫</DropdownMenuShortcut>
         </DropdownMenuItem>
