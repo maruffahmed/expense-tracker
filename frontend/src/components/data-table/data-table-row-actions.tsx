@@ -11,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { taskSchema } from "../dashboard/schema";
+import { transactionsSchema } from "../dashboard/schema";
 
 interface DataTableRowActionsProps<TData> {
   row: Row<TData>;
@@ -20,7 +20,7 @@ interface DataTableRowActionsProps<TData> {
 export function DataTableRowActions<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
-  const rowData = taskSchema.parse(row.original);
+  const rowData = transactionsSchema.parse(row.original);
   console.log(rowData);
   return (
     <DropdownMenu>

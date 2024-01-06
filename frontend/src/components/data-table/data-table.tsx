@@ -25,6 +25,7 @@ import {
 
 // import { DataTablePagination } from "../components/data-table-pagination"
 import { DataTableToolbar } from "@/components/data-table/data-table-toolbar";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -34,7 +35,10 @@ interface DataTableProps<TData, TValue> {
 export function DataTable<TData, TValue>({
   columns,
   data,
-}: DataTableProps<TData, TValue>) {
+  isLoading,
+}: DataTableProps<TData, TValue> & {
+  isLoading?: boolean;
+}) {
   const [rowSelection, setRowSelection] = React.useState({});
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({});
@@ -89,7 +93,19 @@ export function DataTable<TData, TValue>({
             ))}
           </TableHeader>
           <TableBody>
-            {table.getRowModel().rows?.length ? (
+            {isLoading ? (
+              <TableRow>
+                <TableCell
+                  colSpan={columns.length}
+                  className="h-24 text-center"
+                >
+                  <AiOutlineLoading3Quarters
+                    className="animate-spin mx-auto"
+                    size="1.5rem"
+                  />
+                </TableCell>
+              </TableRow>
+            ) : table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
                   key={row.id}

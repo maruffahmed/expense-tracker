@@ -1,11 +1,11 @@
 import { ColumnDef } from "@tanstack/react-table";
-import { Task } from "./schema";
+import { Transactions } from "./schema";
 import { DataTableColumnHeader } from "../data-table/data-table-column-header";
 import { DataTableRowActions } from "../data-table/data-table-row-actions";
 import dayjs from "dayjs";
 import { Badge } from "../ui/badge";
 
-export const columns: ColumnDef<Task>[] = [
+export const columns: ColumnDef<Transactions>[] = [
   {
     accessorKey: "sl",
     header: ({ column }) => (
@@ -74,11 +74,13 @@ export const columns: ColumnDef<Task>[] = [
     ),
     cell: ({ row }) => (
       <div className="w-[100px] capitalize">
-        {(row.getValue("payment_method") as string).replace("_", " ")}
+        {(row.getValue("payment_method") as string)
+          .replace("_", " ")
+          .toLowerCase()}
       </div>
     ),
     filterFn: (row, id, value) => {
-      return value.includes(row.getValue(id));
+      return value.includes(row.getValue(id) as string);
     },
     enableSorting: false,
   },
@@ -91,14 +93,14 @@ export const columns: ColumnDef<Task>[] = [
       const type = row.getValue("type");
       return (
         <div className="w-[100px] capitalize">
-          <Badge variant={type == "expense" ? "destructive" : "success"}>
-            {(row.getValue("type") as string).replace("_", " ")}
+          <Badge variant={type == "EXPENSE" ? "destructive" : "success"}>
+            {(row.getValue("type") as string).toLowerCase()}
           </Badge>
         </div>
       );
     },
     filterFn: (row, id, value) => {
-      return value.includes(row.getValue(id));
+      return value.includes((row.getValue(id) as string).toLowerCase());
     },
     enableSorting: false,
   },

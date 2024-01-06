@@ -1,10 +1,13 @@
 import Stats from "@/components/dashboard/stats";
 import { DataTable } from "@/components/data-table/data-table";
 import Layout from "@/components/layout";
-import transactions from "../data/transactions.json";
+// import transactions from "../data/transactions.json";
 import { columns } from "@/components/dashboard/columns";
+import { useGetUserTransactions } from "@/lib/transaction.lib";
 
 export default function Dashboard() {
+  const { data, isLoading } = useGetUserTransactions();
+  console.log("data", data);
   return (
     <>
       <Layout>
@@ -21,7 +24,11 @@ export default function Dashboard() {
               </h2>
               <div className="overflow-hidden rounded-lg bg-white shadow min-h-[50vh]">
                 <div className="p-6">
-                  <DataTable data={transactions} columns={columns} />
+                  <DataTable
+                    data={data?.transacrions || []}
+                    columns={columns}
+                    isLoading={isLoading}
+                  />
                 </div>
               </div>
             </section>

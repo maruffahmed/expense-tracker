@@ -8,6 +8,15 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { AuthLayout } from "./components/common/auth-layout";
 import { ProtectedLayout } from "./components/common/protected-layout";
 
+// Create a client
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -35,8 +44,7 @@ function App() {
       ],
     },
   ]);
-  // Create a client
-  const queryClient = new QueryClient();
+
   return (
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />

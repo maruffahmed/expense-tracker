@@ -41,13 +41,13 @@ const validationSchema = z.object({
 });
 
 const options = [
-  { value: "shopping", label: "Shopping" },
-  { value: "food", label: "Food" },
-  { value: "travel", label: "Travel" },
+  { value: "salary", label: "Salary" },
+  { value: "business", label: "Business" },
+  { value: "loan", label: "Loan" },
   { value: "others", label: "Others" },
 ];
 
-export default function AddExpenseDialog() {
+export default function AddIncomeDialog() {
   const [isDialogOpen, toggleDialogOpen] = useToggle(false);
   const [selectedOption, setSelectedOption] = useState<(typeof options)[0]>(
     options[0]
@@ -69,12 +69,12 @@ export default function AddExpenseDialog() {
     <Dialog open={isDialogOpen} onOpenChange={toggleDialogOpen}>
       <DialogTrigger asChild>
         <Button
-          variant="default"
+          variant="outline"
           size="sm"
           className="h-8"
           onClick={() => toggleDialogOpen()}
         >
-          Add expense
+          Add income
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px]">
@@ -102,7 +102,7 @@ export default function AddExpenseDialog() {
           }}
           onSubmit={async (values) => {
             await mutateAsync(
-              { ...values, type: "EXPENSE" },
+              { ...values, type: "INCOME" },
               {
                 onSuccess: () => {
                   toggleDialogOpen();

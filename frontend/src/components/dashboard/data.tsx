@@ -4,22 +4,22 @@ import { RiArrowDownDoubleFill, RiArrowUpDoubleFill } from "react-icons/ri";
 export const payment_methods = [
   {
     label: "Cash",
-    value: "cash",
+    value: "CASH",
     icon: CiMoneyCheck1,
   },
   {
     label: "Bank Transfer",
-    value: "bank_transfer",
+    value: "BANK_TRANSFER",
     icon: CiBank,
   },
   {
     label: "Card",
-    value: "card",
+    value: "CARD",
     icon: CiCreditCard1,
   },
   {
     label: "Others",
-    value: "other",
+    value: "OTHERS",
     icon: CiDollar,
   },
 ];

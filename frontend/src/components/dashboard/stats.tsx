@@ -32,7 +32,7 @@ export default function Stats() {
               </p>
               <p className="mt-2 flex items-baseline gap-x-2">
                 <span className="text-2xl sm:text-4xl font-semibold tracking-tight text-gray-900">
-                  ${data?.total_income._sum.amount || 0}
+                  ${data?.total_income?._sum?.amount || 0}
                 </span>
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function Stats() {
               </p>
               <p className="mt-2 flex items-baseline gap-x-2">
                 <span className="text-2xl sm:text-4xl font-semibold tracking-tight text-gray-900">
-                  ${data?.total_expense._sum.amount || 0}
+                  ${data?.total_expense?._sum?.amount || 0}
                 </span>
               </p>
             </div>
