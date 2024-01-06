@@ -1,4 +1,4 @@
-import { Prisma, User } from '@prisma/client';
+import { User } from '@prisma/client';
 import catchAsync from '../utils/catchAsync';
 import httpStatus from 'http-status';
 import transactionService from '../services/transaction.service';
