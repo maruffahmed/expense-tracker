@@ -14,6 +14,12 @@ router.post(
   transactionController.createTransaction
 );
 router.delete('/:transactionId', auth(), transactionController.deleteTransaction);
+router.put(
+  '/:transactionId',
+  auth(),
+  validate(transactionValidation.updateTransaction),
+  transactionController.updateTransaction
+);
 
 export default router;
 

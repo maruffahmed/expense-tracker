@@ -135,10 +135,58 @@ const deleteTransaction = async (userId: string, transactionId: string) => {
   }
 };
 
+const updateTransaction = async (userId: string, transactionId: string, transaction: any) => {
+  try {
+    let updatedTransaction;
+    await prisma.$transaction(async (tx) => {
+      // get balance account
+      const balanceAccount = await tx.balanceAccount.findFirstOrThrow({
+        where: {
+          userId: parseInt(userId)
+        }
+      });
+      // get transaction
+      const oldTransaction = await tx.transaction.findFirstOrThrow({
+        where: {
+          id: parseInt(transactionId)
+        }
+      });
+      // update transaction
+      updatedTransaction = await tx.transaction.update({
+        where: {
+          id: parseInt(transactionId)
+        },
+        data: {
+          ...transaction
+        }
+      });
+      // update balance account
+      if (transaction.amount) {
+        await tx.balanceAccount.update({
+          where: {
+            id: balanceAccount?.id
+          },
+          data: {
+            balance:
+              oldTransaction.type === 'INCOME'
+                ? balanceAccount?.balance - oldTransaction.amount + transaction.amount
+                : balanceAccount?.balance + oldTransaction.amount - transaction.amount
+          }
+        });
+      }
+    });
+    return updatedTransaction;
+  } catch (error) {
+    console.log(error);
+    throw new ApiError(httpStatus.NOT_FOUND, 'Unable to update transaction');
+  }
+};
+
 export default {
   getTotalIncomeByUserId,
   getTotalExpenseByUserId,
   getTransactionByUserId,
   createTransaction,
-  deleteTransaction
+  deleteTransaction,
+  updateTransaction
 };

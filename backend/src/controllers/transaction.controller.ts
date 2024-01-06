@@ -26,8 +26,21 @@ const deleteTransaction = catchAsync(async (req, res) => {
   res.status(httpStatus.OK).send(transaction);
 });
 
+const updateTransaction = catchAsync(async (req, res) => {
+  const user = req.user as User;
+  const transactionId = req.params.transactionId;
+  const updateTransaction = req.body;
+  const transaction = await transactionService.updateTransaction(
+    user.id.toString(),
+    transactionId,
+    updateTransaction
+  );
+  res.status(httpStatus.OK).send(transaction);
+});
+
 export default {
   transactions,
   createTransaction,
-  deleteTransaction
+  deleteTransaction,
+  updateTransaction
 };

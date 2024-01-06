@@ -19,6 +19,23 @@ const createTransaction = {
   })
 };
 
+const updateTransaction = {
+  body: Joi.object().keys({
+    date: Joi.date(),
+    payment_method: Joi.string().valid(
+      PaymentMethod.CASH,
+      PaymentMethod.BANK_TRANSFER,
+      PaymentMethod.CARD,
+      PaymentMethod.OTHERS
+    ),
+    category: Joi.string(),
+    amount: Joi.number(),
+    description: Joi.string(),
+    type: Joi.string().valid(TransactionType.INCOME, TransactionType.EXPENSE)
+  })
+};
+
 export default {
-  createTransaction
+  createTransaction,
+  updateTransaction
 };
