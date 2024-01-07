@@ -7,10 +7,6 @@ export default function Stats() {
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         {isLoading ? (
           <>
-            {/* <AiOutlineLoading3Quarters
-            className="animate-spin mx-auto"
-            size="1.5rem"
-          /> */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 bg-white/5">
               {Array.from({ length: 3 }).map((_, i) => (
                 <div className="animate-pulse flex space-x-4" key={i}>
