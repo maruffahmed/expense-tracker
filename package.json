@@ -13,6 +13,7 @@
     "server:start": "cd backend && yarn start",
     "server:build": "cd backend && yarn build",
     "server:prod": "cd backend && yarn start:prod",
+    "db:migrate": "cd backend && yarn db:migrate",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
