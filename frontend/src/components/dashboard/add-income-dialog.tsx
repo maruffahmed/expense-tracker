@@ -80,7 +80,7 @@ export default function AddIncomeDialog() {
       <DialogContent className="sm:max-w-[600px]">
         <DialogHeader>
           <DialogTitle asChild>
-            <p className="!font-medium">Add expense</p>
+            <p className="!font-medium">Add income</p>
           </DialogTitle>
         </DialogHeader>
         <Formik

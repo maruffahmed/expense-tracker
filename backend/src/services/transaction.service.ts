@@ -57,6 +57,20 @@ const getTransactionByUserId = async (userId: string) => {
   }
 };
 
+const getTransactionById = async (userId: string, transactionId: string) => {
+  try {
+    const transaction = await prisma.transaction.findFirst({
+      where: {
+        id: parseInt(transactionId),
+        userId: parseInt(userId)
+      }
+    });
+    return transaction;
+  } catch (error) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Unable to get transaction');
+  }
+};
+
 const createTransaction = async (userId: string, transaction: any) => {
   try {
     let newTransaction;
@@ -186,6 +200,7 @@ export default {
   getTotalIncomeByUserId,
   getTotalExpenseByUserId,
   getTransactionByUserId,
+  getTransactionById,
   createTransaction,
   deleteTransaction,
   updateTransaction

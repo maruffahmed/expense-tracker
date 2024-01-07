@@ -20,7 +20,10 @@ interface DataTableRowActionsProps<TData> {
 
 export function DataTableRowActions<TData>({
   row,
-}: DataTableRowActionsProps<TData>) {
+  toggleUpdateDialog,
+}: DataTableRowActionsProps<TData> & {
+  toggleUpdateDialog: () => void;
+}) {
   const rowData = transactionsSchema.parse(row.original);
   const { mutateAsync } = useDeleteTransaction();
 
@@ -41,7 +44,7 @@ export function DataTableRowActions<TData>({
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[160px]">
-        <DropdownMenuItem>Edit</DropdownMenuItem>
+        <DropdownMenuItem onClick={toggleUpdateDialog}>Edit</DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={handleDelete}>
           Delete

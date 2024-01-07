@@ -7,6 +7,7 @@ import transactionValidation from '../../validations/transaction.validation';
 const router = express.Router();
 
 router.get('/', auth(), transactionController.transactions);
+router.get('/:transactionId', auth(), transactionController.transactionById);
 router.post(
   '/',
   auth(),

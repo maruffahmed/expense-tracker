@@ -24,6 +24,29 @@ export const useGetUserTransactions = () => {
   });
 };
 
+export const useGetUserTransactionById = (
+  transactionId: number,
+  enabled: boolean
+) => {
+  const { token } = useAuth();
+
+  return useQuery({
+    queryKey: ["transaction", transactionId],
+    queryFn: async () => {
+      const balance = await axios.get(
+        `${config.SERVER_URL}/v1/transaction/${transactionId}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      return balance.data as Transaction;
+    },
+    enabled,
+  });
+};
+
 export const useCreateTransaction = () => {
   const queryClient = useQueryClient();
   const { token } = useAuth();
@@ -33,6 +56,37 @@ export const useCreateTransaction = () => {
       const balance = await axios.post(
         `${config.SERVER_URL}/v1/transaction`,
         data,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      return balance.data as Transaction;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["transactions"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["balance"],
+      });
+    },
+  });
+};
+
+export const useUpdateTransaction = () => {
+  const queryClient = useQueryClient();
+  const { token } = useAuth();
+
+  return useMutation({
+    mutationFn: async (data: Partial<Transaction>) => {
+      const balance = await axios.put(
+        `${config.SERVER_URL}/v1/transaction/${data.id}`,
+        {
+          ...data,
+          id: undefined,
+        },
         {
           headers: {
             Authorization: `Bearer ${token}`,

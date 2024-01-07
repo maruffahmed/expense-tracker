@@ -1,20 +1,28 @@
 import { useQuery } from "@tanstack/react-query";
 import { IUser, IUserbalance } from "@/types/user";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { useAuth } from "@/providers/authProvider";
 import config from "@/config";
 
 export const useGetUser = () => {
-  const { token } = useAuth();
+  const { token, logout } = useAuth();
   return useQuery({
     queryKey: ["user"],
     queryFn: async () => {
-      const user = await axios.get(`${config.SERVER_URL}/v1/auth/me`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      return user.data as IUser;
+      try {
+        const user = await axios.get(`${config.SERVER_URL}/v1/auth/me`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        return user.data as IUser;
+      } catch (error) {
+        if (error instanceof AxiosError) {
+          if (error.response?.status === 401) {
+            logout();
+          }
+        }
+      }
     },
   });
 };

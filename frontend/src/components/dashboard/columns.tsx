@@ -1,9 +1,11 @@
-import { ColumnDef } from "@tanstack/react-table";
-import { Transactions } from "./schema";
+import { ColumnDef, Row } from "@tanstack/react-table";
+import { Transactions, transactionsSchema } from "./schema";
 import { DataTableColumnHeader } from "../data-table/data-table-column-header";
 import { DataTableRowActions } from "../data-table/data-table-row-actions";
 import dayjs from "dayjs";
 import { Badge } from "../ui/badge";
+import UpdateTransactionDialog from "./update-transaction-dialog";
+import { useToggle } from "@uidotdev/usehooks";
 
 export const columns: ColumnDef<Transactions>[] = [
   {
@@ -106,6 +108,22 @@ export const columns: ColumnDef<Transactions>[] = [
   },
   {
     id: "actions",
-    cell: ({ row }) => <DataTableRowActions row={row} />,
+    cell: ({ row }) => <ColumnAction row={row} />,
   },
 ];
+
+// eslint-disable-next-line react-refresh/only-export-components
+const ColumnAction = ({ row }: { row: Row<Transactions> }) => {
+  const rowData = transactionsSchema.parse(row.original);
+  const [isUpdateDialogOpen, toggleUpdateDialog] = useToggle(false);
+  return (
+    <>
+      <DataTableRowActions row={row} toggleUpdateDialog={toggleUpdateDialog} />
+      <UpdateTransactionDialog
+        open={isUpdateDialogOpen}
+        onOpenChange={toggleUpdateDialog}
+        transactionId={rowData.id}
+      />
+    </>
+  );
+};

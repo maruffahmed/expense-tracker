@@ -9,6 +9,16 @@ const transactions = catchAsync(async (req, res) => {
   res.status(httpStatus.OK).send(transactions);
 });
 
+const transactionById = catchAsync(async (req, res) => {
+  const user = req.user as User;
+  const transactionId = req.params.transactionId;
+  const transaction = await transactionService.getTransactionById(
+    user.id.toString(),
+    transactionId
+  );
+  res.status(httpStatus.OK).send(transaction);
+});
+
 const createTransaction = catchAsync(async (req, res) => {
   const user = req.user as User;
   const newTransaction = req.body;
@@ -40,6 +50,7 @@ const updateTransaction = catchAsync(async (req, res) => {
 
 export default {
   transactions,
+  transactionById,
   createTransaction,
   deleteTransaction,
   updateTransaction
