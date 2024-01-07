@@ -23,7 +23,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-// import { DataTablePagination } from "../components/data-table-pagination"
+import { DataTablePagination } from "@/components/data-table/data-table-pagination";
 import { DataTableToolbar } from "@/components/data-table/data-table-toolbar";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
@@ -134,7 +134,7 @@ export function DataTable<TData, TValue>({
           </TableBody>
         </Table>
       </div>
-      {/* <DataTablePagination table={table} /> */}
+      <DataTablePagination table={table} />
     </div>
   );
 }
