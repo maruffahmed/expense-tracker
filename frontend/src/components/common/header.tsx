@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { useAuth } from "@/providers/authProvider";
 import { useGetUser } from "@/lib/user.lib";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -163,12 +164,12 @@ export default function Header() {
                         </div>
                       </div>
                       <div className="mt-3 space-y-1 px-2">
-                        <a
-                          href="#"
+                        <Link
+                          to="/"
                           className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-800"
                         >
-                          Home
-                        </a>
+                          Dashboard
+                        </Link>
                       </div>
                     </div>
                     <div className="pb-2 pt-4">
