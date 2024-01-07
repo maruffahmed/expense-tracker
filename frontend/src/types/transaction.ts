@@ -13,7 +13,7 @@ export type Transaction = {
 };
 
 export type ITransactionResponse = {
-  transacrions: Transaction[];
+  transactions: Transaction[];
 };
 
 export type ICreateTransactionInput = {

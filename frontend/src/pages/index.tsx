@@ -25,7 +25,7 @@ export default function Dashboard() {
               <div className="overflow-hidden rounded-lg bg-white shadow min-h-[50vh]">
                 <div className="p-4 md:p-6">
                   <DataTable
-                    data={data?.transacrions || []}
+                    data={data?.transactions || []}
                     columns={columns}
                     isLoading={isLoading}
                   />

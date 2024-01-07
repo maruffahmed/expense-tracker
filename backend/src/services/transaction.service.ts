@@ -38,20 +38,15 @@ const getTotalExpenseByUserId = async (userId: string) => {
 
 const getTransactionByUserId = async (userId: string) => {
   try {
-    const transaction = await prisma.balanceAccount.findFirst({
+    const transactions = await prisma.transaction.findMany({
       where: {
         userId: parseInt(userId)
       },
-      select: {
-        transacrions: true
-      },
       orderBy: {
-        transacrions: {
-          _count: 'desc'
-        }
+        createdAt: 'desc'
       }
     });
-    return transaction;
+    return { transactions };
   } catch (error) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Unable to get transaction');
   }
