@@ -186,7 +186,6 @@ const updateTransaction = async (userId: string, transactionId: string, transact
     });
     return updatedTransaction;
   } catch (error) {
-    console.log(error);
     throw new ApiError(httpStatus.NOT_FOUND, 'Unable to update transaction');
   }
 };

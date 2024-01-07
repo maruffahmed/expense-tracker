@@ -1,13 +1,11 @@
 import Stats from "@/components/dashboard/stats";
 import { DataTable } from "@/components/data-table/data-table";
 import Layout from "@/components/layout";
-// import transactions from "../data/transactions.json";
 import { columns } from "@/components/dashboard/columns";
 import { useGetUserTransactions } from "@/lib/transaction.lib";
 
 export default function Dashboard() {
   const { data, isLoading } = useGetUserTransactions();
-  console.log("data", data);
   return (
     <>
       <Layout>
