@@ -51,6 +51,115 @@ export default router;
  *                  type: array
  *                  items:
  *                    type: object
+ *                    $ref: '#/components/schemas/Transaction'
+ *       "401":
+ *         $ref: '#/components/responses/Unauthorized'
+ */
+
+/**
+ * @swagger
+ * /transaction/:transactionId:
+ *   get:
+ *     summary: Get transactions by id
+ *     tags: [Transaction]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: transactionId
+ *         schema:
+ *          type: number
+ *          required: true
+ *          description: Transaction id
+ *     responses:
+ *       "200":
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               $ref: '#/components/schemas/Transaction'
+ *       "401":
+ *         $ref: '#/components/responses/Unauthorized'
+ */
+
+/**
+ * @swagger
+ * /transaction/:transactionId:
+ *   delete:
+ *     summary: Delete transactions by id
+ *     tags: [Transaction]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: transactionId
+ *         schema:
+ *          type: number
+ *          required: true
+ *          description: Transaction id
+ *     responses:
+ *       "200":
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               $ref: '#/components/schemas/Transaction'
+ *       "401":
+ *         $ref: '#/components/responses/Unauthorized'
+ */
+
+/**
+ * @swagger
+ * /transaction/:transactionId:
+ *   put:
+ *     summary: Update a transactions by id
+ *     tags: [Transaction]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: transactionId
+ *         schema:
+ *          type: number
+ *          required: true
+ *          description: Transaction id
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               date:
+ *                 type: string
+ *                 format: date-time
+ *               payment_method:
+ *                 type: string
+ *               category:
+ *                 type: string
+ *               amount:
+ *                 type: number
+ *               description:
+ *                 type: string
+ *               type:
+ *                 type: string
+ *             example:
+ *               date: 2021-09-01T00:00:00.000Z
+ *               payment_method: CASH
+ *               category: Shopping
+ *               amount: 100
+ *               description: Buy a new phone
+ *               type: EXPENSE
+ *     responses:
+ *       "200":
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               $ref: '#/components/schemas/Transaction'
  *       "401":
  *         $ref: '#/components/responses/Unauthorized'
  */
@@ -104,32 +213,7 @@ export default router;
  *           application/json:
  *             schema:
  *               type: object
- *               properties:
- *                id:
- *                  type: number
- *                amount:
- *                  type: number
- *                date:
- *                  type: string
- *                  format: date-time
- *                category:
- *                  type: string
- *                description:
- *                  type: string
- *                payment_method:
- *                  type: string
- *                type:
- *                  type: string
- *                userId:
- *                  type: number
- *                balanceAccountId:
- *                  type: number
- *                createdAt:
- *                  type: string
- *                  format: date-time
- *                updatedAt:
- *                  type: string
- *                  format: date-time
+ *               $ref: '#/components/schemas/Transaction'
  *       "401":
  *         $ref: '#/components/responses/Unauthorized'
  */
