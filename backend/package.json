@@ -20,7 +20,8 @@
     "docker:test": "docker-compose -f docker-compose.yml -f docker-compose.test.yml up",
     "docker:dev-db:start": "docker-compose -f docker-compose.only-db-dev.yml up -d",
     "docker:dev-db:stop": "docker-compose -f docker-compose.only-db-dev.yml down",
-    "build": "rimraf build && tsc -p tsconfig.json"
+    "build": "rimraf build && tsc -p tsconfig.json",
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [
     "node",
@@ -45,7 +46,7 @@
   "author": "Antonio Lázaro",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^7.6.0",
+    "@faker-js/faker": "^8.3.1",
     "@jest/globals": "^29.3.1",
     "@types/compression": "^1.7.2",
     "@types/cors": "^2.8.13",
@@ -99,5 +100,8 @@
     "pm2": "^5.2.2",
     "winston": "^3.8.2",
     "xss-filters": "^1.2.7"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   }
 }
