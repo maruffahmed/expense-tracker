@@ -13,6 +13,22 @@ password: 123456
 
 This instruction will get you a copy of this project up and running on your local machine
 
+## Docker setup 🐳
+
+Run the following docker compose command:
+
+```sh
+docker compose up
+```
+
+It'll setup necessary environment and run the following servers:
+An backend will be run at <http://localhost:3000>
+An backend swagger docs will be run at <http://localhost:3000/v1/docs>
+And frontend will be run at <http://localhost:5173>
+
+
+## Manual setup
+
 ### Prerequisites
 
 You need [Node JS](https://nodejs.org) (v18.x.x) installed on your local machine.
@@ -69,9 +85,9 @@ By this command your frontend and backend server will be run concurrently
 yarn start
 ```
 
-An server will be run at <http://localhost:3000>
-An server swagger docs will be run at <http://localhost:3000/v1/docs>
-And frontend server will be run at <http://localhost:5173>
+An backend will be run at <http://localhost:3000>
+An backend swagger docs will be run at <http://localhost:3000/v1/docs>
+And frontend will be run at <http://localhost:5173>
 
 #### Test user credential
 

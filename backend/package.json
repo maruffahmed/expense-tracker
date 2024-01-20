@@ -14,6 +14,7 @@
     "prettier": "prettier --check **/*.ts",
     "prettier:fix": "prettier --write **/*.ts",
     "db:push": "prisma db push",
+    "db:seed": "ts-node prisma/seed.ts",
     "db:studio": "prisma studio",
     "db:migrate": "prisma migrate dev",
     "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up",
@@ -21,8 +22,7 @@
     "docker:test": "docker-compose -f docker-compose.yml -f docker-compose.test.yml up",
     "docker:dev-db:start": "docker-compose -f docker-compose.only-db-dev.yml up -d",
     "docker:dev-db:stop": "docker-compose -f docker-compose.only-db-dev.yml down",
-    "build": "rimraf build && tsc -p tsconfig.json",
-    "seed": "ts-node prisma/seed.ts"
+    "build": "rimraf build && tsc -p tsconfig.json"
   },
   "keywords": [
     "node",
